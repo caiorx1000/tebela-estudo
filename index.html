@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Teste</title>
+    <style>
+        .table1, .table2{
+            border-collapse: collapse;
+            margin: 50px auto;
+            border: solid 5px black;
+            box-shadow: 0 0 30px black;
+            height: 400px;
+        }
+        td{
+            background-color: aqua;
+            text-align: center;
+        }
+        body{
+            background-color: chocolate;
+        }
+        .day{
+            border: solid 3px rgb(107, 8, 8);
+            background-color: aqua;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .principal{
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .btn-day{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            
+            box-shadow: 0 0 2px 2px black;
+           
+        }
+        .btn-day:hover{
+            box-shadow: 2px 2px 2px 2px black;
+            background-color: rgba(133, 133, 226, 0.911);
+
+
+        }
+
+        @media (max-width:400px){
+            table{
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body background-color="red">
+    <table class="table1" border="1" width="500" height="300">
+        <tr class="principal">
+            <td rowspan="2" align="center" bgcolor="#999999">Browser</td>
+            <td colspan="2" align="center">visitor</td>
+        </tr>        
+        <tr>
+            <td align="center">Numero de alunos</td>
+            <td align="center">Porcentagem</td>            
+        </tr>
+        <tr>
+            <td>2 ano A</td>
+            <td>18</td>
+            <td>59%</td>            
+        </tr>
+        <tr>
+            <td>2 ano B</td>
+            <td>17</td>
+            <td>28%</td>            
+        </tr>
+        <tr>
+            <td>2 ano C</td>
+            <td>19</td>
+            <td>13%</td>            
+        </tr>
+    </table>    
+    <table class="table2" border= "1" width="500" >
+        <tr>
+            <td rowspan="3" class="day"><button class="btn-day">Day</button></td>
+            <td colspan="5">Seminar</td>
+            
+        </tr>
+        <tr>
+            <td colspan="2">Schedule</td>
+            <td rowspan="2" colspan="3">Topic</td>
+            
+        </tr>
+        <tr>
+            <td>Begin</td>
+            <td>End</td>
+            
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m.</td>
+            <td rowspan="2">5:00 p.m.</td>
+            <td colspan="3">Introduction to XML</td>
+            
+        </tr>
+        <tr>
+            <td colspan="3">Validtid: DTD and Relax Ng</td>
+            
+        </tr>
+        <tr>
+            <td rowspan="3">Twesday</td>
+            <td>8:00 a.m.</td>
+            <td>11:00 p.m.</td>
+            <td colspan="3">lkm</td>
+            
+        </tr>
+        <tr>
+            <td>11:00 a.m.</td>
+            <td>2:00 p.m.</td>
+            <td colspan="3">fortum Ng</td>
+            
+        </tr>
+        <tr>
+            <td>2:00 a.m.</td>
+            <td>5:00 p.m.</td>
+            <td colspan="3">Relax Ng 78</td>
+            
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 a.m.</td>
+            <td>12:00 p.m.</td>
+            <td >Relax Ng</td>
+            
+        </tr>
+
+        
+    </table>
+</body>
+</html>
